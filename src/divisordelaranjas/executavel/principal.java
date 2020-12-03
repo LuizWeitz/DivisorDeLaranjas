@@ -2,68 +2,70 @@ package divisordelaranjas.executavel;
 
 import javax.swing.JOptionPane;
 
+/*Author Luiz Weitz*/
+
 public class principal {
 
 	public static void main(String[] args) {
 
 		/* Strings com as perguntas */
 
-		String laranjas = JOptionPane.showInputDialog("Quantas laranjas ser„o dividas?");
-		String pessoas = JOptionPane.showInputDialog("Quantas pessoas s„o no total?");
+		String laranjas = JOptionPane.showInputDialog("Quantas laranjas ser√£o dividas?");
+		String pessoas = JOptionPane.showInputDialog("Quantas pessoas s√£o no total?");
 
-		/* Converte os valores recebido pelas strings em n˙meros */
+		/* Converte os valores recebido pelas strings em n√∫meros */
 
 		double totalLaranjas = Double.parseDouble(laranjas);
 		double totalPessoas = Double.parseDouble(pessoas);
 
-		/* OpeÁ„o matem·tica, pega o total de laranjas e divide pelo total de pessoas */
+		/* Ope√ß√£o matem√°tica, pega o total de laranjas e divide pelo total de pessoas */
 
 		int resultado = (int) (totalLaranjas / totalPessoas);
 
-		/* OperaÁ„o respons·vel pela resto da divis„o(%) */
+		/* Opera√ß√£o respons√°vel pela resto da divis√£o(%) */
 
 		double resto = totalLaranjas % totalPessoas;
 
 		/*
-		 * Essa linha È respons·vel pela pergunta se È para realmente continuar a operaÁ„o
+		 * Essa linha √© respons√°vel pela pergunta se √© para realmente continuar a opera√ß√£o
 		 */
 
-		int resposta = JOptionPane.showConfirmDialog(null, "VocÍ realmente deseja realizar essa operaÁ„o?");
+		int resposta = JOptionPane.showConfirmDialog(null, "Voc√™ realmente deseja realizar essa opera√ß√£o?");
 		/*
-		 * Esse IF ele confere se a RESPOSTA for igual a 0,  continua, se n„o a operaÁ„o n„o È realizada
-		 * 0 no JOptionPane È SIM 
-		 * Caso a opÁ„o selecionada seja N√O a operaÁ„o n„o È realizada
+		 * Esse IF ele confere se a RESPOSTA for igual a 0,  continua, se n√£o a opera√ß√£o n√£o √© realizada
+		 * 0 no JOptionPane √© SIM 
+		 * Caso a op√ß√£o selecionada seja N√ÉO a opera√ß√£o n√£o √© realizada
 		 */
 
 		if (resposta == 0) {
 
-			JOptionPane.showMessageDialog(null, "O total para cada pessoa(s) È: " + resultado + " laranja(s)");
+			JOptionPane.showMessageDialog(null, "O total para cada pessoa(s) √©: " + resultado + " laranja(s)");
 
 		} else {
 			
-			JOptionPane.showMessageDialog(null, "OperaÁ„o n„o realizada!");
+			JOptionPane.showMessageDialog(null, "Opera√ß√£o n√£o realizada!");
 
 		}
 
 		/*
-		 * Essa linha È respons·vel pela pergunta se È para realmente continuar a operaÁ„o
+		 * Essa linha √© respons√°vel pela pergunta se √© para realmente continuar a opera√ß√£o
 		 */
 		
-		int respostaResto = JOptionPane.showConfirmDialog(null, "VocÍ deseja realmente ver o resto da divis„o?");
+		int respostaResto = JOptionPane.showConfirmDialog(null, "Voc√™ deseja realmente ver o resto da divis√£o?");
 
 		/*
-		 * Esse IF ele confere se a RESPOSTA for igual a 0,  continua, se n„o a operaÁ„o n„o È realizada
-		 * 0 no JOptionPane È SIM 
-		 * Caso a opÁ„o selecionada seja N√O a operaÁ„o n„o È realizada
+		 * Esse IF ele confere se a RESPOSTA for igual a 0,  continua, se n√£o a opera√ß√£o n√£o √© realizada
+		 * 0 no JOptionPane √© SIM 
+		 * Caso a op√ß√£o selecionada seja N√ÉO a opera√ß√£o n√£o √© realizada
 		 */
 		
 		if (respostaResto == 0) {
 
-			JOptionPane.showMessageDialog(null, "O resto da divis„o È de: " + resto + " laranja(s)");
+			JOptionPane.showMessageDialog(null, "O resto da divis√£o √© de: " + resto + " laranja(s)");
 		
 		} else {
 		
-			JOptionPane.showMessageDialog(null, "OperaÁ„o n„o realizada!");
+			JOptionPane.showMessageDialog(null, "Opera√ß√£o n√£o realizada!");
 		}
 
 	}
