@@ -1,5 +1,5 @@
 # Divisor-De-Laranjas
-Divisor simples de laranjas com divisão. Feito em Java com Swing JOptionPane
+Divisor simples de laranjas com resto da divisão. Feito em Java com Swing JOptionPane
 
 Como usar : <br></br>
 1- Faça dowload do repositório <br></br>
