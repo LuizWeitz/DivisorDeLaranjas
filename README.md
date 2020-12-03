@@ -1,4 +1,4 @@
-# DivisorDeLaranjas
+# Divisor-De-Laranjas
 Divisor simples de laranjas com divisão. Feito em Java com Swing JOptionPane
 
 Como usar : <br></br>
